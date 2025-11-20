@@ -167,7 +167,7 @@ function renderElemen(p, ele, eid) {
         btnHantar.onclick = ()=> {
             const msg = input.value.trim();
             if(!msg) return;
-            const watak = select.value || ele.watak[0];
+            const watak = select.value || ele.watak[0] || "Aidil";  // <-- default Aidi
             const side = (chatBox.children.length % 2 === 0) ? "left" : "right";
             const chat = { watak, msg, side };
             ele.content.push(chat);
