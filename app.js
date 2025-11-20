@@ -151,7 +151,8 @@ function renderElemen(p, ele, eid) {
                 b.className = (c.side==="left") ? "chatBubbleLeft" : "chatBubbleRight";
                 b.contentEditable = true;
                 b.dataset.index = ele.content.indexOf(c);
-                b.innerText = `${c.watak}: ${c.msg}`;
+                const watakName = c.watak || "Aidil";      // <-- letak default Aidil kalau kosong
+                b.innerText = `${watakName}: ${c.msg}`;
                 b.oninput = ()=>{
                     const parts = b.innerText.split(": ");
                     c.watak = parts[0];
