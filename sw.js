@@ -1,4 +1,4 @@
-const CACHE_NAME = "kamus-cache-v1";
+const CACHE_NAME = "kamus-cache-v2";
 const FILES = [
   "/BIKamus/",
   "/BIKamus/index.html",
