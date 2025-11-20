@@ -11,20 +11,19 @@
 </head>
 <body>
 <div class="container">
-<h1 class="title">Kamus Hafalan BI</h1>
-<button id="btnTambahPerkataan" class="btnPrimary">+ Tambah Perkataan Baharu</button>
-<div id="daftarPerkataan"></div>
-<hr>
-<button id="btnExport" class="btnSecondary">Export JSON</button>
-<input type="file" id="importFile" accept=".json" style="display:none;">
-<button id="btnImport" class="btnSecondary">Import JSON</button>
+    <h1 class="title">Kamus Hafalan BI</h1>
+    <button id="btnTambahPerkataan" class="btnPrimary">+ Tambah Perkataan Baharu</button>
+    <div id="daftarPerkataan"></div>
+    <hr>
+    <button id="btnExport" class="btnSecondary">Export JSON</button>
+    <input type="file" id="importFile" accept=".json" style="display:none;">
+    <button id="btnImport" class="btnSecondary">Import JSON</button>
 </div>
 <script src="app.js"></script>
 <script>
 if ("serviceWorker" in navigator) {
-navigator.serviceWorker.register("/BIKamus/sw.js").then(()=>console.log("SW registered")).catch(console.error);
+    navigator.serviceWorker.register("/BIKamus/sw.js").then(()=>console.log("SW registered")).catch(console.error);
 }
 </script>
 </body>
 </html>
-
