@@ -203,7 +203,7 @@ document.getElementById("btnExport").onclick = ()=> {
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    a.download = "kamus_export.json";
+    a.download = "kamusbi_export.json";
     a.click();
     URL.revokeObjectURL(url);
 };
